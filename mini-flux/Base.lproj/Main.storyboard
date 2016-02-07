@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZ3-rS-JUc">
-                                <rect key="frame" x="269" y="285" width="62" height="30"/>
-                                <state key="normal" title="CountUp"/>
+                                <rect key="frame" x="305" y="285" width="30" height="30"/>
+                                <state key="normal" title="Up"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nya-Br-82A">
-                                <rect key="frame" x="295" y="323" width="10.5" height="21"/>
+                                <rect key="frame" x="296" y="323" width="10.5" height="21"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YkS-tZ-yZI">
                                         <rect key="frame" x="0.0" y="0.0" width="10.5" height="21"/>
@@ -30,24 +30,31 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncQ-1b-hRs">
                                                 <rect key="frame" x="0.0" y="0.0" width="10.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqW-rf-mT0">
+                                <rect key="frame" x="260.5" y="285" width="39" height="30"/>
+                                <state key="normal" title="Down"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vZ3-rS-JUc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Wx-97-rm1"/>
+                            <constraint firstItem="vZ3-rS-JUc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="20" id="2Wx-97-rm1"/>
                             <constraint firstItem="vZ3-rS-JUc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="K2e-Gd-hZk"/>
-                            <constraint firstItem="nya-Br-82A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qg1-vh-F6t"/>
+                            <constraint firstItem="nya-Br-82A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="Qg1-vh-F6t"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nya-Br-82A" secondAttribute="bottom" constant="256" id="RWm-A2-ncW"/>
+                            <constraint firstItem="fqW-rf-mT0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XPs-Xy-1gW"/>
                             <constraint firstItem="nya-Br-82A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="323" id="i4e-nE-7S1"/>
+                            <constraint firstItem="fqW-rf-mT0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-20" id="qBF-6e-oZp"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="countDownButton" destination="fqW-rf-mT0" id="2TR-2o-OVs"/>
                         <outlet property="countLabel" destination="ncQ-1b-hRs" id="9PS-g8-RBt"/>
                         <outlet property="countUpButton" destination="vZ3-rS-JUc" id="Dkd-lt-bzX"/>
                     </connections>

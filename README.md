@@ -2,9 +2,14 @@
 
 [![License][license-image]][license-url]
 
-## Description
+mini flux implementation.  
+simple counter application.
 
-## Installation
+## Description
+EventEmitter only.(not use Flux's Dispatch).
+- See also
+    - [azu/mini-flux: mini flux implementation](https://github.com/azu/mini-flux)
+    - [Flux | Application Architecture for Building User Interfaces](http://facebook.github.io/flux/)
 
 ## Author
 
